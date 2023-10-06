@@ -1,0 +1,228 @@
+
+.player-decide-btns{
+    width: 100%;
+    height: 300px;
+    /* background: red; */
+    display: grid;
+    place-items: center;
+}
+
+.btn-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group button{
+    margin: 3px 0;
+    background-color: var(--main-theme);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 30px;
+    font-family: var(--main-font);
+    cursor: pointer;
+}
+
+.start-time-display{
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    width: 500px;
+    height: 190px;
+    font-family: var(--main-font);
+    background: var(--main-theme);
+    display: none;
+    place-items: center;
+    border-radius: 5px;
+}
+
+.start-time-display h1 span{
+    display: block;
+    text-align: center;
+}
+
+.snake-ladder-container{
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    /* background: red; */
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.dice-container{
+    /* background: yellow; */
+    flex-basis: 200px;
+}
+
+.dice-container .dice-btn{
+    background: var(--main-theme);
+    width: 100%;
+    padding: 7px 14px;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    margin: auto;
+    cursor: pointer;
+}
+
+.dice-container .disable{
+    background: grey;
+    color: black;
+    cursor: not-allowed;
+}
+
+.my-btn h1:first-of-type{
+    text-align: center;
+    /* background: red; */
+}
+
+.opponent-move{
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+}
+
+.opponent-move h1:first-of-type{
+    text-align: center;
+    font-size: 27px;
+}
+
+@keyframes slide{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+.animation-slider{
+    width: 100%;
+    height: 15px;
+    margin: 3px 0;
+    visibility: hidden;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,81,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 5px;
+}
+
+.animate{
+    animation-name: slide;
+    animation-duration: 2500ms;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out;
+}
+
+.dice-value{
+    width: 100%;
+    text-align: center;
+    font-size: 59px;
+}
+
+.img-container{
+    flex-basis: 550px;
+    height: 548px;
+    /* background: red; */
+    display: grid;
+    grid-template-columns: 55px 55px 55px 55px 55px 55px 55px 55px 55px 55px;
+    position: relative;
+}
+
+.demo{
+    /* width: 55px;
+    height: 50px; */
+    /* background: blue; */
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.snake-ladder-image{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.player-one,.player-two{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 2;
+}
+
+.player-one{
+    /* left: -35px;
+    top: 93%; */
+    background: orange;
+}
+.player-two{
+    /* left: -70px;
+    top: 93%; */
+    background: purple;
+}
+
+.start-game-decisions{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.start-game-decisions div{
+    background: var(--main-theme);
+    width: 400px;
+    height: 90px;
+}
+.snake-ladder-start-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.snake-ladder-start-btns button{
+    display: block;
+    margin:5px 0;
+    background: white;
+    font-family: var(--main-font);
+    padding: 6px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.snake-ladder-game-message{
+    display:none;
+    font-family: var(--main-font);
+    text-align: center;
+}
+.snake-ladder-game-message h1{
+    font-size: 22px;
+}
+
+@media screen and (max-width: 750px)
+{
+    .snake-ladder-container{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .dice-container{
+        display: flex;
+        flex-direction: row;
+        /* background: green; */
+        flex-basis: 100px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .opponent-move h1,.my-btn h1{
+        font-size: 18px !important;
+    }
+}

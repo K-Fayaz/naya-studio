@@ -1,0 +1,35 @@
+
+.find-opponent-btn{
+    width: 100%;
+    height:300px;
+    display: grid;
+    place-items: center;
+}
+
+.find-opponent-btn button{
+    padding: 6px 30px;
+    border-radius: 3px;
+    border: none;
+    background: var(--main-theme);
+    font-family: var(--main-font);
+    cursor: pointer;
+}
+
+.message-modal{
+    font-family:var(--main-font);
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+}
+
+.message-modal h1{
+    font-size: 25px;
+    /* margin-top: 20px; */
+    text-align: center;
+}
+
+.disable{
+    background: grey;
+    color: black;
+    cursor: not-allowed;
+}

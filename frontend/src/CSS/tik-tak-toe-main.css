@@ -1,0 +1,179 @@
+
+@keyframes slideEffect{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+.main-btn-container{
+    width:100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-btn-container button{
+    margin: 3px 0;
+    font-family: var(--main-font);
+    background: var(--main-theme);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+
+.tik-tak-toe-board-wrap{
+    width: 100%;
+    height: 70vh;
+    /* background: red; */
+    display: grid;
+    place-items: center;
+}
+
+.turn-display-borad{
+    width: 300px;
+    /* background: red; */
+    text-align: center;
+}
+
+.tik-taoe-board{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+.tik-tak-toe-slider{
+    width: 300px;
+    height: 15px !important;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,81,29,1) 50%, rgba(252,176,69,1) 100%);
+    margin: 3px 0;
+    border-radius: 2px;
+    display: none;
+}
+
+.animate{
+    animation-name: slideEffect;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    background: var(--main-theme);
+    border: 1px solid orangered;
+    display: grid;
+    place-items: center;
+    font-family: var(--main-font);
+    font-size: 45px;
+    cursor: pointer;
+}
+#one{
+    border-top-left-radius: 5px;
+}
+#three{
+    border-top-right-radius: 5px;
+}
+#seven{
+    border-bottom-left-radius: 5px;
+}
+#nine{
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Online game Playing BTN */
+.find-opponent-btn{
+    width: 100%;
+    height: 300px;  
+    display: grid;
+    place-items: center;
+}
+
+.find-opponent-btn button{
+    background: var(--main-theme);
+    font-family: var(--main-font);
+    padding: 6px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.message-display-banner{
+    width: 100%;
+    height: 300px;
+    display: none;
+    place-items: center;
+    /* background: red; */
+}
+.message-board{
+    padding: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    background: var(--main-theme);
+    border-radius: 3px;
+}
+
+.message-pop-board-tik-tak{
+    width: 100%;
+    height:50vh;
+    /* background: var(--main-theme); */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.message-ai{
+    width: 300px;
+    /* height: 150px; */
+    padding: 50px;
+    background: var(--main-theme);
+}
+.game-start-btns{
+    width: 100%;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-start-btns button{
+    padding: 6px 15px;
+    background: white;
+    font-family: var(--main-font);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.game-begins-timer{
+    width: 300px;
+    background: var(--main-theme);
+    font-family: var(--main-font);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-begins-timer h1:first-of-type{
+    font-size: 22px;
+}
+
+.score-display{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background: red; */
+}
+
+.score-display div{
+    text-align: center;
+}
+
+
+

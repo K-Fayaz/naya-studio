@@ -1,0 +1,54 @@
+
+body{
+    position: relative;
+}
+
+.nav-container{
+    font-family: var(--main-font);
+    background: var(--main-theme);
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    margin-left: 10px;
+}
+
+.hamburger{
+    font-family: var(--main-font);
+    color: orangered;
+    display: none;
+}
+
+
+.all-games-link{
+    flex-basis: 500px;
+    /* background: red; */
+}
+
+.all-games-link ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li{
+    list-style-type: none;
+} 
+
+@media screen and (max-width: 750px){
+    .all-games-link{
+        flex-basis: 300px;
+        /* background: red; */
+    }
+
+    ul li{
+        font-size: 13px;
+    }
+
+    .logo h1:first-of-type{
+        font-size: 18px;
+    }
+}
